@@ -1,0 +1,13 @@
+Duka Store FAQ (sample document)
+
+Delivery
+Orders placed before 2pm are delivered within Nairobi the same day. Orders to other towns take 2 to 4 working days. Delivery within Nairobi costs 200 shillings, and orders above 5000 shillings are delivered free.
+
+Payment
+We accept M-Pesa through an STK push prompt sent to your phone at checkout. After you enter your PIN, you receive an M-Pesa confirmation message and your order is marked as paid. We do not accept cash on delivery.
+
+Returns
+Items can be returned within 7 days of delivery if they are unused and in their original packaging. Refunds are sent to the M-Pesa number used for the order within 3 working days after we receive the item. Perishable goods cannot be returned.
+
+Support
+Customer support is available Monday to Saturday from 8am to 6pm. You can reach us through the contact form on the website. We reply to all messages within one working day.

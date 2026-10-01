@@ -1,0 +1,5 @@
+scikit-learn
+pypdf
+streamlit
+anthropic
+pytest
