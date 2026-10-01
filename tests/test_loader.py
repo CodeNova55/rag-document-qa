@@ -25,6 +25,10 @@ def test_load_from_bytes_strips_byte_order_mark():
     assert load_from_bytes(b"\xef\xbb\xbfHabari", "a.txt") == "Habari"
 
 
+def test_windows_line_endings_are_normalised():
+    assert load_from_bytes(b"line one\r\nline two", "a.txt") == "line one\nline two"
+
+
 def test_unsupported_extension_raises():
     with pytest.raises(ValueError):
         load_from_bytes(b"a,b,c", "data.csv")

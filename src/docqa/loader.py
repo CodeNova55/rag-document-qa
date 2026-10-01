@@ -14,10 +14,13 @@ def load_from_bytes(data, filename):
 
     if suffix == ".pdf":
         reader = PdfReader(io.BytesIO(data))
-        return "\n".join(page.extract_text() or "" for page in reader.pages)
+        text = "\n".join(page.extract_text() or "" for page in reader.pages)
+    else:
+        # utf-8-sig also strips a byte order mark if the file has one
+        text = data.decode("utf-8-sig", errors="replace")
 
-    # utf-8-sig also strips a byte order mark if the file has one
-    return data.decode("utf-8-sig", errors="replace")
+    # Windows files use \r\n; use \n everywhere so chunking behaves the same
+    return text.replace("\r\n", "\n").replace("\r", "\n")
 
 
 def load_text(path):
